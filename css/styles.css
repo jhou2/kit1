@@ -550,10 +550,16 @@ pre code {
   .container {
     max-width: 540px;
   }
+  .logo {
+    width: 150px;
+  }
 }
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+  }
+  .logo {
+    width: 40%;
   }
 }
 @media (min-width: 992px) {
@@ -575,14 +581,29 @@ pre code {
   margin-left: auto;
 }
 
+@media (min-width: 500px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+  .logo {
+    width: 150px;
+  }
+}
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
+  }
+  .logo {
+    width: 150px;
   }
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
+  }
+  .logo {
+    width: 40%;
   }
 }
 @media (min-width: 992px) {
@@ -4552,10 +4573,6 @@ input[type=button].btn-block {
 .accordion > .card > .card-header {
   border-radius: 0;
   margin-bottom: -0.125rem;
-}
-
-.logo {
-  width: 40%;
 }
 
 .breadcrumb {
