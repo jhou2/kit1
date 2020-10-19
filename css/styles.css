@@ -559,7 +559,7 @@ pre code {
     max-width: 720px;
   }
   .logo {
-    width: 40%;
+    width: 100%;
   }
 }
 @media (min-width: 992px) {
@@ -603,7 +603,7 @@ pre code {
     max-width: 720px;
   }
   .logo {
-    width: 40%;
+    width: 100%;
   }
 }
 @media (min-width: 992px) {
