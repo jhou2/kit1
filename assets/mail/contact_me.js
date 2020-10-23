@@ -20,9 +20,31 @@ $(function () {
             }
             $this = $("#sendMessageButton");
             $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
+
+            // Send a POST request with Axios
+axios({
+    method: 'post',
+    url: 'https://app.99inbound.com/api/e/aNsUaVtv',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    },
+    data: {
+        name: name,
+        phone: phone,
+        email: email,
+        message: message,
+    }
+  }).then((response) => { console.log(response); })
+
+  // Original Ajax
             $.ajax({
-                url: "/assets/mail/contact_me.php",
+                url: "https://app.99inbound.com/api/e/aNsUaVtv",
                 type: "POST",
+                headers: {
+                    Accept: "application/json",
+                    "Content-type": "application/json",
+                },
                 data: {
                     name: name,
                     phone: phone,
